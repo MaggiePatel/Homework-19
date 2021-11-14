@@ -23,10 +23,29 @@ p {
     font-size: 15px;
     line-height: 1.5;
 }
+
   header {
     background-color: #F0EBDE;
     padding: 40px;
     height: 15px;
+  }
+
+  .preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .preloader img {
+    animation: spin 3s ease;
+    transition: all;
+    width: 150px;
+    margin: 0 auto;
   }
 
   header li {
@@ -252,77 +271,15 @@ margin-top: 25px;
 } 
 
 
-/*HELLO SECTION*/
 
-@media only screen and (max-width: 600px) {
-.heroImg {  /*top Section*/
-  background-color: #F7F5EF;
-  display: flex;
-    flex-direction: column;
- width: 200%;
- padding: 10px;
-
-
-}
-
-
-  @media only screen and (max-width: 600px) {
-  .maggiePatel {  /*Image of Me*/
-    padding: 50px;
-}
-
-
-
-
-
-/*ABOUT ME SECTION*/
-@media only screen and (max-width: 600px) {
-#Container {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  width: 200%;
-  padding: 10px;
-
-  background-color: #F0EBDE;
-}
-
-@media only screen and (max-width: 600px) {
-.colorfulImg {
-
-padding: 100px;
-
-}
-
-@media only screen and (max-width: 600px) {
-.AboutmeBox {
-  border: 1px solid black;
-  top: 1700px;
- right: 700px;
- margin: 5px;
-  background-color:#F7F5EF;
-  padding: 10px;
-  width: 70%;
-
-
-
-}
-
-/*PROJECT SECTION*/
-
-
-@media only screen and (max-width: 600px) {
-  .flex {   /*Parent Container for projectCard and flex items for Skills flex items*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
   }
-
-  @media only screen and (max-width: 600px) {
-  .projectCard {    /*flex items only for project*/
-    flex-direction: column;
-    align-items: center;
-   }
